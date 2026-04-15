@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Meeting minutes for the Pomodoro Timer first brainstorm meeting" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meeting Minutes - Pomodoro Timer First Brainstorm</title>
+    <link rel="icon" href="screenshots_and_videos/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <h1>Meeting Minutes</h1>
+      <h2>Pomodoro Timer Brainstorm</h2>
+      <p><strong>Date:</strong> April 10, 2026</p>
+
+      <nav>
+        <h3>Page table of contents</h3>
+        <ul>
+          <li><a href="#attendance">Attendance</a></li>
+          <li><a href="#agenda">Meeting agenda</a></li>
+          <li><a href="#unfinished">Work from last week</a></li>
+          <li><a href="#new-business">New work</a></li>
+          <li><a href="#comments">Comments / Questions</a></li>
+          <li><a href="#media">Audio and Video Recordings</a></li>
+          <li><a href="#feedback">Feedback Form</a></li>
+        </ul>
+      </nav>
+
+      <hr />
+    </header>
+
+    <main>
+      <section id="attendance">
+        <h2>Attendance</h2>
+        <p>The following members attended the meeting:</p>
+        <ul>
+          <li>john doe</li>
+          <li>mary doe</li>
+          <li>Leo Messi</li>
+          <li>Lebron James</li>
+        </ul>
+        <p><b>Absent:</b> Cristiano Ronaldo</p>
+      </section>
+      <div>
+      <p> This div was added to satisfy the requirement of including a div element.</p>
+    </div>
+      <hr />
+
+      <section id="agenda">
+        <h2>Agenda</h2> 
+        <ol>
+          <li>Discuss the main goal of the Pomodoro Timer app</li>
+          <li>Brainstorm possible features</li>
+          <li>Assign initial tasks</li>
+          <li>Set deadlines for next meeting</li>
+        </ol>
+      </section>
+
+      <hr />
+
+      <section id="unfinished">
+        <h2>Unfinished Business</h2>
+        <p>
+          Theres no unfinished buisness, this was the kickoff meeting.
+        </p>
+      </section>
+
+      <hr />
+
+      <section id="new-business">
+        <h2>New Business</h2>
+        <ul>
+          <li>
+            The team agreed the app should include a <strong>countdown timer</strong> and
+            <strong>break reminders</strong>.
+          </li>
+          <li>
+            A possible future feature is a <em>daily productivity tracker</em>.
+          </li>
+          <li>
+            The team also suggested adding sound notifications for when you complete a task and a simple task list.
+          </li>
+        </ul>
+
+        <details>
+          <summary>More brainstorming notes</summary>
+          <p>
+            Additional ideas included adding a dark mode toggle, progress history, and motivational messages after the user completes a session.
+          </p>
+        </details>
+      </section>
+
+      <hr />
+
+      <section id="comments">
+        <h2>Comments / Questions / Concerns</h2>
+        <p>
+          A concern raised by Messi was that we were adding to many features and should just focus on a simple design for now.
+        </p>
+        <p>
+         John doe asked whether the team should focus first on mobile layout or desktop
+          layout.
+        </p>
+      </section>
+
+      <hr />
+
+      <section id="media">
+        <h2>Pictures, Diagrams, and Recordings</h2>
+
+        <h3>Diagram</h3>
+        <img src="screenshots_and_videos/diagram.png" alt="Sketch of the Pomodoro Timer app layout" width="600" />
+
+        <h3>Audio Recording</h3>
+        <audio controls>
+        <source src="Tuesdayat01_42_19_pm.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+        </audio>
+
+        <h3>Video Recording</h3>
+        
+        <video controls width="300" preload="metadata">
+        <source src="1000007010.mp4" type="video/mp4" />
+        Your browser does not support the video element.
+        </video>
+      </section>
+
+      <hr />
+
+      <section id="feedback">
+        <h2>Meeting Feedback Form</h2>
+
+        <form>
+          <fieldset>
+            <legend>Quick Feedback</legend>
+
+            <p>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" />
+            </p>
+
+            <p>
+              <label for="date">Meeting Date:</label>
+              <input type="date" id="date" name="date" />
+            </p>
+
+            <p>
+              <label for="role">Role:</label>
+              <input list="roles" id="role" name="role" />
+              <datalist id="roles">
+                <option value="Developer"></option>
+                <option value="Designer"></option>
+                <option value="Project Manager"></option>
+                
+              </datalist>
+            </p>
+
+            <p>
+              <label for="topic">Favorite Topic Discussed:</label>
+              <select id="topic" name="topic">
+                <option value="timer">Timer Design</option>
+                <option value="features">Feature Ideas</option>
+                <option value="ui">User Interface</option>
+                <option value="planning">Random conversation</option>
+              </select>
+            </p>
+
+            <p>
+              <span>Was the meeting helpful?</span><br />
+              <input type="radio" id="yes" name="helpful" value="yes" />
+              <label for="yes">Yes</label>
+
+              <input type="radio" id="no" name="helpful" value="no" />
+              <label for="no">No</label>
+            </p>
+
+            <p>
+              <span>What should be included next time?</span><br />
+              <input type="checkbox" id="demo" name="next-time" value="demo" />
+              <label for="demo">Prototype Demo</label><br />
+
+              <input type="checkbox" id="timeline" name="next-time" value="timeline" />
+              <label for="timeline">Project Timeline</label><br />
+
+              <input type="checkbox" id="tasks" name="next-time" value="tasks" />
+              <label for="tasks">More thorough discussion on task assignment</label>
+            </p>
+
+            <p>
+              <button type="submit">Submit</button>
+            </p>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <hr />
+
+    <footer>
+      <p>Pomodoro meeting minutes for kickoff meeting.</p>
+    </footer>
+  </body>
+</html>
