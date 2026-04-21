@@ -2,10 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Meeting minutes for the Pomodoro Timer first brainstorm meeting" />
+    <meta
+      name="description"
+      content="Meeting minutes for the Pomodoro Timer first brainstorm meeting"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meeting Minutes - Pomodoro Timer First Brainstorm</title>
-    <link rel="icon" href="screenshots/favicon.ico" />
+    <link rel="icon" href="screenshots_and_videos/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      /* Internal CSS */
+      h2 {
+        text-decoration: underline;
+        text-decoration-color: rgba(14, 116, 144, 0.28);
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -41,13 +59,18 @@
         </ul>
         <p><b>Absent:</b> Cristiano Ronaldo</p>
       </section>
-      <div>
-      <p> This div was added to satisfy the requirement of including a div element.</p>
-    </div>
+
+      <div style="background-color: rgba(14, 116, 144, 0.08);">
+        <p>
+          This div was added to satisfy the requirement of including a div
+          element.
+        </p>
+      </div>
+
       <hr />
 
       <section id="agenda">
-        <h2>Agenda</h2> 
+        <h2>Agenda</h2>
         <ol>
           <li>Discuss the main goal of the Pomodoro Timer app</li>
           <li>Brainstorm possible features</li>
@@ -60,9 +83,7 @@
 
       <section id="unfinished">
         <h2>Unfinished Business</h2>
-        <p>
-          Theres no unfinished buisness, this was the kickoff meeting.
-        </p>
+        <p>Theres no unfinished buisness, this was the kickoff meeting.</p>
       </section>
 
       <hr />
@@ -71,21 +92,26 @@
         <h2>New Business</h2>
         <ul>
           <li>
-            The team agreed the app should include a <strong>countdown timer</strong> and
+            The team agreed the app should include a
+            <strong>countdown timer</strong> and
             <strong>break reminders</strong>.
           </li>
           <li>
-            A possible future feature is a <em>daily productivity tracker</em>.
+            A possible future feature is a
+            <em>daily productivity tracker</em>.
           </li>
           <li>
-            The team also suggested adding sound notifications for when you complete a task and a simple task list.
+            The team also suggested adding sound notifications for when you
+            complete a task and a simple task list.
           </li>
         </ul>
 
         <details>
           <summary>More brainstorming notes</summary>
           <p>
-            Additional ideas included adding a dark mode toggle, progress history, and motivational messages after the user completes a session.
+            Additional ideas included adding a dark mode toggle, progress
+            history, and motivational messages after the user completes a
+            session.
           </p>
         </details>
       </section>
@@ -95,11 +121,12 @@
       <section id="comments">
         <h2>Comments / Questions / Concerns</h2>
         <p>
-          A concern raised by Messi was that we were adding to many features and should just focus on a simple design for now.
+          A concern raised by Messi was that we were adding to many features and
+          should just focus on a simple design for now.
         </p>
         <p>
-         John doe asked whether the team should focus first on mobile layout or desktop
-          layout.
+          John doe asked whether the team should focus first on mobile layout or
+          desktop layout.
         </p>
       </section>
 
@@ -109,19 +136,22 @@
         <h2>Pictures, Diagrams, and Recordings</h2>
 
         <h3>Diagram</h3>
-        <img src="screenshots/diagram.png" alt="Sketch of the Pomodoro Timer app layout" width="600" />
+        <img
+          src="screenshots_and_videos/diagram.png"
+          alt="Sketch of the Pomodoro Timer app layout"
+          width="600"
+        />
 
         <h3>Audio Recording</h3>
         <audio controls>
-        <source src="media/audo.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
+          <source src="Tuesdayat01_42_19_pm.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
         </audio>
 
         <h3>Video Recording</h3>
-        
         <video controls width="300" preload="metadata">
-        <source src="media/1000007010.mp4" type="video/mp4" />
-        
+          <source src="1000007010.mp4" type="video/mp4" />
+          Your browser does not support the video element.
         </video>
       </section>
 
@@ -151,7 +181,6 @@
                 <option value="Developer"></option>
                 <option value="Designer"></option>
                 <option value="Project Manager"></option>
-                
               </datalist>
             </p>
 
@@ -179,11 +208,18 @@
               <input type="checkbox" id="demo" name="next-time" value="demo" />
               <label for="demo">Prototype Demo</label><br />
 
-              <input type="checkbox" id="timeline" name="next-time" value="timeline" />
+              <input
+                type="checkbox"
+                id="timeline"
+                name="next-time"
+                value="timeline"
+              />
               <label for="timeline">Project Timeline</label><br />
 
               <input type="checkbox" id="tasks" name="next-time" value="tasks" />
-              <label for="tasks">More thorough discussion on task assignment</label>
+              <label for="tasks"
+                >More thorough discussion on task assignment</label
+              >
             </p>
 
             <p>
