@@ -1,0 +1,356 @@
+/*
+   Theme stuff
+   */
+
+   /* I want the theme to contrast from medium blue to light */
+:root {
+  --page-bg: linear-gradient(180deg, #2e5fc2 0%, rgb(235, 242, 250) 100%);
+  --surface: rgba(255, 255, 255, 0.9);
+  --surface-strong: hsl(0, 0%, 100%);
+  --text-main: #1f2937;
+  --text-muted: slategray;
+  --heading-color: color-mix(in srgb, #123b67 78%, white 22%);
+  --accent: hsl(199, 71%, 22%);
+  --accent-soft: rgba(16, 98, 121, 0.12);
+  --border-soft: #0a3c70;
+  --shadow-soft: 0 12px 32px rgba(15, 23, 42, 0.08);
+  --max-content-width: 70rem;
+  --section-gap: 1.5rem;
+  --radius: 1rem;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 2rem 1rem 3rem;
+  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--text-main, #222);
+  background: var(--page-bg);
+  background-color: aliceblue;
+  line-height: 1.7;
+}
+
+
+header,
+main,
+footer {
+  width: min(92%, var(--max-content-width));
+  margin: 0 auto;
+}
+
+header,
+section,
+footer,
+form,
+nav,
+details,
+div {
+  background: var(--surface);
+  border-style: solid;
+  border-color: var(--border-soft);
+  border-width: 2px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+}
+
+/* copied this from the original root mainly */
+header {
+  background: linear-gradient(135deg, var(--surface-strong) 0%, #eef7ff 100%);
+  padding: 2rem 2rem 1.75rem 2rem;
+  margin-bottom: var(--section-gap);
+}
+
+
+main {
+  display: block;
+  margin: 0 auto 2rem auto;
+}
+
+
+section {
+  width: 100%;
+  max-width: 100%;
+  min-width: 18rem;
+  margin: 0 auto 1.5rem auto;
+  padding: 1.5rem;
+}
+
+
+div {
+  padding-top: 1rem;
+  padding-right: 1.25rem;
+  padding-bottom: 1rem;
+  padding-left: 1.25rem;
+  margin-bottom: var(--section-gap);
+}
+
+
+footer {
+  padding: 1rem 1.5rem;
+  margin-top: var(--section-gap);
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  text-align: center;
+}
+
+
+h1,
+h2,
+h3 {
+  color: var(--heading-color);
+  text-align: left;
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2.4rem;
+  letter-spacing: -0.04em;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+}
+
+p,
+li,
+label,
+summary,
+legend,
+figcaption {
+  color: var(--text-main);
+}
+
+strong,
+b {
+  color: #0f3d63;
+}
+
+em {
+  color: rgb(122, 59, 31);
+}
+
+footer p,
+header p {
+  color: var(--text-muted);
+  text-align: left;
+}
+
+
+nav {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding: 1rem 1.25rem;
+  background-color: var(--accent-hard);
+}
+
+nav h3 {
+  margin-bottom: 0.75rem;
+}
+
+nav ul {
+  padding-left: 1.2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 0.12em;
+  text-underline-offset: 0.15em;
+}
+
+a:hover {
+  color: #0b5f79;
+}
+
+/* 
+   Issue 2: fixing spacing, adding borders, and also fixing sizing.
+    */
+
+
+#attendance,
+#agenda,
+#unfinished,
+#new-business,
+#comments,
+#media,
+#feedback {
+  background-color: rgba(255, 255, 255, 0.93);
+  border: 2px solid var(--border-soft);
+  border-radius: 16px;
+}
+
+ul,
+ol {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  padding-left: 2rem;
+}
+
+li {
+  margin-bottom: 0.45rem;
+}
+
+
+img {
+  display: block;
+  width: min(100%, 37.5rem); 
+  max-width: 100%;
+  min-width: 12rem;
+  height: auto;
+  margin: 1rem auto;
+  padding: 0.25rem;
+  background-color: var(--surface-strong);
+  border-style: solid;
+  border-color: var(--border-soft);
+  border-width: 3px;
+  border-radius: 14px;
+}
+
+audio,
+video {
+  display: block;
+  width: 100%;
+  max-width: 28rem;
+  min-width: 14rem;
+  margin: 1rem 0 1.25rem 0;
+  padding: 0.4rem;
+  background-color: var(--surface-strong);
+  border: 2px solid var(--border-soft);
+  border-radius: 0.9rem;
+}
+
+
+details {
+  width: 100%;
+  max-width: 95%;
+  min-width: 16rem;
+  margin-top: 1rem;
+  padding: 1rem 1rem 0.25rem 1rem;
+  background: hsla(199, 77%, 41%, 0.07);
+  border: 2px solid rgba(14, 116, 144, 0.18);
+  border-radius: 0.9rem;
+}
+
+summary {
+  color: var(--heading-color);
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+
+form {
+  width: 100%;
+  max-width: 44rem;
+  min-width: 18rem;
+  margin: 1rem auto;
+  padding: 1.25rem;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  border: 2px solid var(--border-soft);
+  border-radius: 1rem;
+}
+
+fieldset {
+  padding: 1rem 1.25rem 1.25rem 1.25rem;
+  border-style: solid;
+  border-color: var(--border-soft);
+  border-width: 2px;
+  border-radius: 0.9rem;
+  background-color: rgba(240, 248, 255, 0.7);
+}
+
+legend {
+  color: var(--heading-color);
+  font-weight: 700;
+  padding: 0 0.5rem;
+}
+
+
+input,
+select,
+button {
+  font: inherit;
+}
+
+input[type="text"],
+input[type="date"],
+input[list],
+select {
+  width: 80%;
+  max-width: 22rem;
+  min-width: 10rem;
+  margin-top: 0.35rem;
+  padding: 0.5rem 0.65rem;
+  border: 2px solid #c9d7e5;
+  border-radius: 10px;
+  background-color: white;
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 0.35rem;
+  margin-left: 0.2rem;
+}
+
+
+button {
+  background: var(--accent);
+  color: white;
+  border-style: solid;
+  border-color: #0b5f79;
+  border-width: 2px;
+  border-radius: 1000px;
+  padding: 0.7rem 1.2rem;
+  min-width: 7rem;
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  width: 100%;
+  max-width: 68rem;
+  min-width: 10rem;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(18, 59, 103, 0.28),
+    transparent
+  );
+  margin: 1.5rem auto;
+}
+
+
+
+h1 {
+  font-size: min( 1.5rem, 6vw);
+}
+
+
+footer p {
+  font-size: 12pt;
+}
+
+
+header {
+  max-width: 12in;
+}
