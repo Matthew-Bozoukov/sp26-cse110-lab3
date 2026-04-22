@@ -23,25 +23,25 @@ How is the team feeling today?
 ## Yesterday
 What was completed or progressed on since the last standup?
 
-- **Member 1:**  
+- **Joe:**  
   - 
-- **Member 2:**  
+- **Joe:**  
   - 
-- **Member 3:**  
+- **Joe:**  
   - 
-- **Member 4:**  
+- **Jake:**  
   - 
 
 ## Today
 What is each person focusing on next?
 
-- **Member 1:**  
+- **Joe:**  
   - 
-- **Member 2:**  
+- **Joe:**  
   - 
-- **Member 3:**  
+- **Joe:**  
   - 
-- **Member 4:**  
+- **Jake:**  
   - 
 
 ## Blockers
